@@ -1,0 +1,67 @@
+# ==============================================
+# Project Sercrets
+# ==============================================
+environments/dev/Secrets/
+
+# ==============================================
+# Terraform State Files
+# ==============================================
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Terraform crash log files
+crash.log
+crash.*.log
+
+# ==============================================
+# Sensitive & Secret Files — NEVER commit these
+# ==============================================
+Secrets/
+*.Password.txt
+*.password.txt
+*.secret
+*.secrets
+*.key
+*.pem
+
+# ==============================================
+# Terraform Plan files (can contain sensitive data)
+# ==============================================
+*.tfplan
+*.plan
+tfplan
+
+# ==============================================
+# Terraform variable files (may contain secrets)
+# ==============================================
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# ==============================================
+# Output files (auto-generated)
+# ==============================================
+Outputs/
+*.output.txt
+
+# ==============================================
+# OS & Editor Files
+# ==============================================
+.DS_Store
+.DS_Store?
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==============================================
+# Logs
+# ==============================================
+*.log
